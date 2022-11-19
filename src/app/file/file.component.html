@@ -1,0 +1,14 @@
+<input type="file" (change)="onFileSelected($event)" >
+<!-- <div *ngIf="myImg">
+    <img [src]="myImg | async" style="width: 200px;height:200px">
+</div> -->
+
+<!-- <div *ngIf="myImg">
+    <img [src]="myImg" style="width: 200px;height:200px">
+</div> -->
+<div *ngIf="url">
+    <img [src]="url" style="width: 200px;height:200px">
+</div>
+<div>
+    <input type="button" value="Save" (click)="onSave()">
+</div>
